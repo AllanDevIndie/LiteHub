@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styledoc.css">
+</head>
+<body>
+    <header class="documentacao-header" id="topo">
+    <div class="container">
+        <span class="tag">USO INTERNO</span>
+
+    <h1><a href="index.html">LiteHub OS</a></h1>
+
+        <p>
+            Manual operacional, comercial e metodológico da LiteHub — Agência de Marketing.
+        </p>
+
+        <div class="status-legenda">
+            <span class="tag">✓ Definido</span>
+            <span class="tag validacao">◐ Em validação</span>
+            <span class="tag definir">○ A definir</span>
+        </div>
+    </div>
+</header>
+
+
+<nav class="menu-documentacao">
+    <div class="container">
+        <a href="#inicio">Início</a>
+        <a href="#fundamentos">Fundamentos</a>
+        <a href="#glossario-salto">Dicionário SALTO</a>
+        <a href="#metodologia">Metodologia</a>
+        <a href="#diagnostico">Diagnóstico</a>
+        <a href="#complexidade">Complexidade</a>
+        <a href="#modulos">Módulos</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#comercial">Comercial</a>
+        <a href="#operacao">Operação</a>
+        <a href="#precificacao">Precificação</a>
+        <a href="#templates">Templates</a>
+    </div>
+</nav>
+
+
+<main class="container">
+
+    <!-- ===================================================== -->
+    <!-- INÍCIO -->
+    <!-- ===================================================== -->
+
+    <section class="secao" id="inicio">
+
+        <span class="tag">✓ Definido</span>
+
+        <h2>1. Como usar esta documentação</h2>
+
+        <p>
+            O LiteHub OS é a fonte interna oficial para documentar como a LiteHub pensa,
+            vende, executa, mede e melhora seus serviços.
+        </p>
+
+        <p>
+            Esta documentação deve permitir que uma pessoa entenda não apenas
+            <strong>o que fazer</strong>, mas também:
+        </p>
+
+        <ul>
+            <li>por que determinada decisão existe;</li>
+            <li>quando utilizar cada processo;</li>
+            <li>quais são os limites da atuação da LiteHub;</li>
+            <li>como medir se o trabalho funcionou;</li>
+            <li>quando um processo deve ser revisado.</li>
+        </ul>
+
+        <div class="nota">
+            <strong>Princípio de documentação:</strong><br>
+            primeiro validamos o processo na prática; depois sofisticamos ou automatizamos.
+            O software deve acompanhar a operação — e não obrigar a operação a se adaptar
+            a um software criado cedo demais.
+        </div>
+
+
+        <h3>Status da documentação</h3>
+
+        <div class="tabela-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Status</th>
+                        <th>Significado</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><span class="tag">✓ Definido</span></td>
+                        <td>
+                            Regra ou processo adotado oficialmente na versão atual da LiteHub.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="tag validacao">◐ Em validação</span>
+                        </td>
+                        <td>
+                            Já existe uma regra funcional, mas será recalibrada com clientes
+                            e dados reais.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="tag definir">○ A definir</span>
+                        </td>
+                        <td>
+                            Tema necessário que ainda não possui decisão oficial.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <h3>Mapa da documentação</h3>
+
+        <div class="indice-grid">
+
+            <a class="indice-card" href="#fundamentos">
+                <strong>01 — Fundamentos</strong>
+                Propósito da LiteHub, filosofia e princípios.
+            </a>
+
+            <a class="indice-card" href="#glossario-salto">
+                <strong>02 — Dicionário SALTO</strong>
+                Nomenclaturas oficiais usadas na metodologia.
+            </a>
+
+            <a class="indice-card" href="#metodologia">
+                <strong>03 — Metodologia SALTO</strong>
+                Situação, Atração, Leads, Tecnologia e Otimização.
+            </a>
+
+            <a class="indice-card" href="#diagnostico">
+                <strong>04 — Diagnóstico</strong>
+                Índice SALTO, questionário e classificação de maturidade.
+            </a>
+
+            <a class="indice-card" href="#complexidade">
+                <strong>05 — Complexidade</strong>
+                Critérios C1, C2 e C3.
+            </a>
+
+            <a class="indice-card" href="#modulos">
+                <strong>06 — Módulos e Escopo</strong>
+                N0, N1, N2, N3, UE-I e UE-R.
+            </a>
+
+            <a class="indice-card" href="#produtos">
+                <strong>07 — Produtos</strong>
+                Eclosão, Tração, Evolução e Escala.
+            </a>
+
+            <a class="indice-card" href="#comercial">
+                <strong>08 — Comercial</strong>
+                Prospecção, diagnóstico, proposta e fechamento.
+            </a>
+
+            <a class="indice-card" href="#operacao">
+                <strong>09 — Operação</strong>
+                Onboarding, ciclos, execução, acompanhamento e offboarding.
+            </a>
+
+            <a class="indice-card" href="#precificacao">
+                <strong>10 — Precificação</strong>
+                Capacidade, complexidade, escopo e margem.
+            </a>
+
+            <a class="indice-card" href="#templates">
+                <strong>11 — Templates</strong>
+                Documentos usados durante todo o fluxo do cliente.
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===================================================== -->
+    <!-- FUNDAMENTOS -->
+    <!-- ===================================================== -->
+
+    <section class="secao" id="fundamentos">
+
+        <span class="tag">✓ Definido</span>
+
+        <h2>2. Fundamentos da LiteHub</h2>
+
+        <h3>O que é a LiteHub</h3>
+
+        <p>
+            A <strong>LiteHub — Agência de Marketing</strong> atua conectando marketing,
+            tecnologia, dados e orientação comercial para ajudar empresas a sair de uma
+            situação pouco clara e alcançar uma evolução mensurável.
+        </p>
+
+
+        <h3>Proposta central</h3>
+
+        <div class="nota">
+            <strong>Situação A → intervenção → Situação B mensurável.</strong>
+        </div>
+
+        <p>
+            A LiteHub não parte da premissa de que toda empresa precisa de tráfego pago,
+            landing page, CRM ou qualquer ferramenta específica.
+        </p>
+
+        <p>
+            Primeiro entende-se a situação atual, identifica-se o principal gargalo e,
+            então, define-se qual intervenção oferece a melhor possibilidade de avanço.
+        </p>
+
+
+        <h3>O que a LiteHub busca entregar</h3>
+
+        <ul>
+            <li>clareza sobre a situação atual;</li>
+            <li>identificação dos principais gargalos;</li>
+            <li>priorização do próximo movimento;</li>
+            <li>implementação compatível com os recursos disponíveis;</li>
+            <li>mensuração dos resultados;</li>
+            <li>aprendizado para a próxima decisão;</li>
+            <li>maior autonomia para a empresa cliente.</li>
+        </ul>
+
+
+        <h3>O que a LiteHub não pretende ser</h3>
+
+        <ul>
+            <li>uma agência que oferece todos os serviços possíveis;</li>
+            <li>uma fábrica ilimitada de posts ou peças;</li>
+            <li>uma fornecedora presa a uma única plataforma;</li>
+            <li>uma empresa que promete faturamento ou vendas garantidas;</li>
+            <li>substituta integral do comercial ou da gestão do cliente;</li>
+            <li>uma operação que cria dependência tecnológica desnecessária.</li>
+        </ul>
+
+
+        <h3>Princípios oficiais</h3>
+
+        <div class="tabela-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Princípio</th>
+                        <th>Significado</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td><strong>Antes de saltar, precisamos saber de onde estamos partindo.</strong></td>
+                        <td>
+                            Todo ciclo começa com diagnóstico e definição do Ponto A.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td><strong>Todo ciclo busca uma primeira vitória mensurável.</strong></td>
+                        <td>
+                            Não executamos ações apenas para “fazer marketing”.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td><strong>A metodologia é fixa; a execução é adaptável.</strong></td>
+                        <td>
+                            A, L e T podem receber prioridades diferentes dependendo
+                            da situação da empresa.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td><strong>Evidência vale mais que percepção.</strong></td>
+                        <td>
+                            Uma ferramenta ou processo recebe valor pelo que realmente
+                            produz e não apenas por existir.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td><strong>Tecnologia é meio, não fim.</strong></td>
+                        <td>
+                            A solução mais simples capaz de resolver adequadamente o
+                            problema pode ser a melhor.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td><strong>O cliente deve ganhar autonomia.</strong></td>
+                        <td>
+                            A LiteHub estrutura, orienta e melhora o sistema sem criar
+                            dependência artificial.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td><strong>Todo Ponto B se torna um novo Ponto A.</strong></td>
+                        <td>
+                            Cada ciclo pode revelar um novo gargalo e um novo SALTO.
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <a href="#topo" class="voltar-topo">↑ Voltar ao topo</a>
+
+    </section>
+
+
+
+    <!-- ===================================================== -->
+    <!-- GLOSSÁRIO SALTO -->
+    <!-- ===================================================== -->
+
+    <section class="secao" id="glossario-salto">
+
+        <span class="tag">✓ Definido</span>
+
+        <h2>3. Dicionário Oficial SALTO</h2>
+
+        <p>
+            Esta seção padroniza as nomenclaturas utilizadas internamente pela LiteHub.
+            Sempre que possível, utilizar estes termos com o mesmo significado em
+            documentos, propostas, reuniões e sistemas.
+        </p>
+
+
+        <div class="tabela-wrapper">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Termo</th>
+                        <th>Definição oficial</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td><strong>SALTO</strong></td>
+                        <td>
+                            Metodologia operacional da LiteHub composta por
+                            Situação, Atração, Leads & Aquisição, Tecnologia e Otimização.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>S — Situação</strong></td>
+                        <td>
+                            Etapa responsável por entender onde a empresa está,
+                            quais recursos possui, seus objetivos, dados e principais gargalos.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>A — Atração</strong></td>
+                        <td>
+                            Trabalha os motivos pelos quais o público correto deveria
+                            prestar atenção na empresa: mensagem, oferta, posicionamento,
+                            criativos e percepção de valor.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>L — Leads & Aquisição</strong></td>
+                        <td>
+                            Engloba os caminhos pelos quais novas oportunidades chegam
+                            à empresa. Não está limitado a tráfego pago ou a uma plataforma.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>T — Tecnologia</strong></td>
+                        <td>
+                            Infraestrutura utilizada para captar, organizar, acompanhar
+                            e mensurar oportunidades: CRM, WhatsApp, tracking,
+                            landing pages, automações e integrações.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>O — Otimização</strong></td>
+                        <td>
+                            Etapa em que resultados são analisados, gargalos identificados,
+                            aprendizados registrados e o próximo movimento é definido.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Ponto A</strong></td>
+                        <td>
+                            Fotografia inicial da situação da empresa antes de uma
+                            intervenção ou ciclo SALTO.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Ponto B</strong></td>
+                        <td>
+                            Situação desejada ou alcançada após o ciclo.
+                            Deve ser observável ou mensurável sempre que possível.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Primeira vitória</strong></td>
+                        <td>
+                            Primeiro avanço relevante e realista que a LiteHub pretende
+                            produzir ou comprovar dentro do ciclo.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Ciclo SALTO</strong></td>
+                        <td>
+                            Período em que a LiteHub parte de um Ponto A,
+                            executa prioridades e compara o resultado com um Ponto B.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Novo SALTO</strong></td>
+                        <td>
+                            Novo ciclo iniciado após o Ponto B anterior tornar-se o novo Ponto A.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Índice SALTO</strong></td>
+                        <td>
+                            Sistema de avaliação de maturidade da empresa nos cinco pilares,
+                            com pontuação máxima de 15 pontos.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Estágio de maturidade</strong></td>
+                        <td>
+                            Classificação resultante do Índice SALTO:
+                            Eclosão, Tração, Evolução ou Escala.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Eclosão</strong></td>
+                        <td>
+                            Estágio de baixa maturidade, normalmente com ausência de processos,
+                            informações ou estrutura básica.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Tração</strong></td>
+                        <td>
+                            Estágio em que já existem ações ou estruturas,
+                            mas falta consistência, previsibilidade ou integração.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Evolução</strong></td>
+                        <td>
+                            Estágio em que diferentes partes do sistema já funcionam
+                            e precisam ser profissionalizadas e conectadas.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Escala</strong></td>
+                        <td>
+                            Estágio de maior maturidade, com estrutura funcionando
+                            e necessidade de eficiência, integração e crescimento.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Complexidade C1</strong></td>
+                        <td>
+                            Ambiente de operação simples, com poucas variáveis,
+                            pessoas, canais ou sistemas envolvidos.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Complexidade C2</strong></td>
+                        <td>
+                            Ambiente de complexidade moderada, com mais pessoas,
+                            ofertas, canais, sistemas ou dependências.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Complexidade C3</strong></td>
+                        <td>
+                            Ambiente com alto volume de variáveis, estruturas,
+                            integrações, equipes ou processos.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>N0</strong></td>
+                        <td>
+                            A LiteHub não atua naquele módulo durante o ciclo atual.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>N1 — Orientação</strong></td>
+                        <td>
+                            A LiteHub diagnostica, recomenda e orienta.
+                            A execução principal fica com o cliente.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>N2 — Implantação / Execução</strong></td>
+                        <td>
+                            A LiteHub efetivamente constrói, configura ou executa
+                            a atividade dentro dos limites contratados.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>N3 — Operação / Otimização</strong></td>
+                        <td>
+                            A LiteHub opera continuamente a frente,
+                            acompanha resultados, testa e melhora.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>UE</strong></td>
+                        <td>
+                            Unidade de Escopo utilizada internamente para representar
+                            aproximadamente uma hora de capacidade produtiva da LiteHub.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>UE-I</strong></td>
+                        <td>
+                            Unidade de Escopo de Implantação.
+                            Representa trabalho concentrado e finito,
+                            como configurar CRM ou desenvolver uma landing page.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>UE-R</strong></td>
+                        <td>
+                            Unidade de Escopo Recorrente.
+                            Representa capacidade consumida continuamente a cada mês,
+                            como gestão de uma frente de mídia.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Núcleo SALTO</strong></td>
+                        <td>
+                            Conjunto mínimo presente em todos os projetos:
+                            diagnóstico, Ponto A, objetivo, intervenção,
+                            mensuração, Ponto B e recomendação do próximo movimento.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Módulo</strong></td>
+                        <td>
+                            Categoria de solução disponível dentro da LiteHub,
+                            como Aquisição, CRM, Dados ou Retenção.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Frente operacional</strong></td>
+                        <td>
+                            Módulo que está sendo efetivamente operado ou implantado
+                            durante determinado ciclo.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Rotação de Prioridade SALTO</strong></td>
+                        <td>
+                            Mudança planejada dos módulos prioritários quando um
+                            gargalo é resolvido e outro passa a exigir atenção.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Modo Exploração</strong></td>
+                        <td>
+                            Ciclo utilizado quando ainda não existem dados confiáveis.
+                            O objetivo principal é criar uma baseline e aprender como
+                            o sistema se comporta.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Modo Otimização</strong></td>
+                        <td>
+                            Ciclo utilizado quando já existe histórico confiável
+                            e o objetivo é melhorar resultados conhecidos.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Prontidão de Investimento</strong></td>
+                        <td>
+                            Avaliação da capacidade financeira, comercial e de
+                            mensuração necessária antes de aumentar aquisição paga.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Capacidade de execução do cliente</strong></td>
+                        <td>
+                            Capacidade da empresa cliente de responder aprovações,
+                            atender oportunidades, executar tarefas internas e colaborar
+                            com o projeto.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Health Score</strong></td>
+                        <td>
+                            Futuro indicador de saúde da relação com o cliente,
+                            usado para identificar satisfação, risco de churn e necessidade
+                            de intervenção.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Saudável</strong></td>
+                        <td>
+                            Conta com relacionamento, percepção de direção e execução
+                            dentro do esperado.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Atenção</strong></td>
+                        <td>
+                            Conta apresentando sinais de insatisfação,
+                            dificuldade operacional ou queda de engajamento.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>SOS</strong></td>
+                        <td>
+                            Conta com risco elevado de cancelamento ou ruptura,
+                            exigindo ação de recuperação.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Cliente fundador</strong></td>
+                        <td>
+                            Cliente participante da fase inicial de validação da LiteHub,
+                            contratado em condição especial para ajudar a validar metodologia,
+                            escopo, UEs, resultados e operação.
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <div class="alerta">
+            <strong>Regra importante:</strong>
+            maturidade, complexidade, nível do módulo e escopo são coisas diferentes.
+
+            <br><br>
+
+            <strong>Índice SALTO</strong> = o que a empresa precisa melhorar.<br>
+            <strong>Complexidade</strong> = quão difícil é operar naquele ambiente.<br>
+            <strong>N0–N3</strong> = profundidade da atuação da LiteHub.<br>
+            <strong>UE</strong> = capacidade de trabalho consumida.<br>
+            <strong>Produto contratado</strong> = limite comercial disponível.
+        </div>
+
+        <a href="#topo" class="voltar-topo">↑ Voltar ao topo</a>
+
+    </section>
+
+
+    <!-- ===================================================== -->
+    <!-- SEÇÕES FUTURAS -->
+    <!-- Os próximos conteúdos serão adicionados abaixo -->
+    <!-- ===================================================== -->
+
+    <section class="secao" id="metodologia">
+        <span class="tag validacao">◐ Próxima documentação</span>
+        <h2>4. Metodologia SALTO</h2>
+        <p>Conteúdo será documentado na próxima etapa.</p>
+        <a href="#topo" class="voltar-topo">↑ Voltar ao topo</a>
+    </section>
+
+    <section class="secao" id="diagnostico">
+        <span class="tag validacao">◐ Próxima documentação</span>
+        <h2>5. Índice e Diagnóstico SALTO</h2>
+        <p>Conteúdo será documentado posteriormente.</p>
+    </section>
+
+    <section class="secao" id="complexidade">
+        <span class="tag validacao">◐ Em validação</span>
+        <h2>6. Fator de Complexidade</h2>
+        <p>Conteúdo será documentado posteriormente.</p>
+    </section>
+
+    <section class="secao" id="modulos">
+        <span class="tag validacao">◐ Em validação</span>
+        <h2>7. Módulos e Escopo</h2>
+        <p>Conteúdo será documentado posteriormente.</p>
+    </section>
+
+    <section class="secao" id="produtos">
+        <span class="tag validacao">◐ Em validação</span>
+        <h2>8. Produtos LiteHub</h2>
+        <p>Conteúdo será documentado posteriormente.</p>
+    </section>
+
+    <section class="secao" id="comercial">
+        <span class="tag validacao">◐ Em validação</span>
+        <h2>9. Processo Comercial</h2>
+        <p>Conteúdo será documentado posteriormente.</p>
+    </section>
+
+    <section class="secao" id="operacao">
+        <span class="tag validacao">◐ Em validação</span>
+        <h2>10. Operação do Cliente</h2>
+        <p>Conteúdo será documentado posteriormente.</p>
+    </section>
+
+    <section class="secao" id="precificacao">
+        <span class="tag validacao">◐ Em validação</span>
+        <h2>11. Precificação</h2>
+        <p>Conteúdo será documentado posteriormente.</p>
+    </section>
+
+    <section class="secao" id="templates">
+        <span class="tag definir">○ A definir</span>
+        <h2>12. Biblioteca de Templates</h2>
+        <p>Conteúdo será documentado posteriormente.</p>
+    </section>
+
+</main>
+</body>
+</html>
