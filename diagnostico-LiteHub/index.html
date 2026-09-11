@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diagnóstico SALTO — LiteHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header class="app-header">
+      <div><div class="eyebrow">LiteHub • ferramenta interna</div><h1>Diagnóstico SALTO</h1><p class="subtitle">Formulário rápido para registrar maturidade, evidências e próximos passos.</p></div>
+      <div class="header-actions"><a class="btn ghost" href="../index.html">Voltar ao LiteHub</a><button class="btn ghost" id="openBackup">Backup</button><button class="btn" id="newClient">+ Novo diagnóstico</button></div>
+    </header>
+    <main>
+      <section id="homeView" class="view active">
+        <div class="section-head"><div><h2>Diagnósticos</h2><p>Os dados são salvos automaticamente neste navegador.</p></div></div>
+        <div id="clientCards" class="client-grid"></div>
+      </section>
+
+      <section id="formView" class="view">
+        <div class="form-top"><button class="back-link" id="backHome">← Diagnósticos</button><div class="form-actions"><button class="btn ghost" id="saveAndHome">Salvar e sair</button><button class="btn" id="showResult">Ver resultado</button></div></div>
+        <div class="progress-wrap"><div class="progress-label"><span id="progressText">Informações iniciais</span><span id="progressCount"></span></div><div class="progress"><div id="progressBar"></div></div></div>
+        <form id="diagnosisForm" novalidate>
+          <div id="formPages"></div>
+        </form>
+        <div class="keyboard-hint">Atalhos: <kbd>0</kbd>–<kbd>3</kbd> nota • <kbd>4</kbd> Não • <kbd>5</kbd> Parcial • <kbd>6</kbd> Sim • <kbd>9</kbd> Pular • <kbd>←</kbd>/<kbd>→</kbd> navegar</div>
+      </section>
+
+      <section id="resultView" class="view print-area">
+        <div class="form-top no-print"><button class="back-link" id="backForm">← Voltar ao formulário</button><div class="form-actions"><button class="btn ghost" id="openResultTab">Abrir em nova guia</button><button class="btn" id="printResult">Imprimir A4</button></div></div>
+        <div id="resultContent"></div>
+      </section>
+    </main>
+
+    <dialog id="backupDialog"><div class="dialog-head"><h2>Backup e dados</h2><button class="icon-btn" id="closeBackup">×</button></div><p>Exporte regularmente um JSON. Ele contém todos os diagnósticos salvos neste navegador.</p><div class="backup-actions"><button class="btn" id="exportData">Exportar JSON</button><button class="btn danger" id="resetAll">Resetar tudo</button><label class="btn secondary file-label">Importar JSON<input type="file" id="importData" accept=".json,application/json"></label></div><p class="small muted">A importação substitui os dados atuais pelos dados do arquivo. Exporte o estado atual antes de importar.</p></dialog>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
