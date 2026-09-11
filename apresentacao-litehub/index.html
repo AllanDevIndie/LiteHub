@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LiteHub — Marketing, Tecnologia e Vendas</title>
+  <meta name="description"
+    content="Apresentação institucional LiteHub. Conectando Marketing, Tecnologia e Vendas para identificar gargalos e estruturar o próximo salto da sua empresa.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Ambient background lighting canvas / effects -->
+  <div class="ambient-background">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="app-header">
+    <div class="brand">
+      <span class="brand-logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#00FF87" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M2 17L12 22L22 17" stroke="#00FF87" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M2 12L12 17L22 12" stroke="#00FF87" stroke-dasharray="2 2" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </span>
+      <span class="brand-name">LiteHub</span>
+      <span class="brand-badge">Estratégia & Escala</span>
+    </div>
+
+    <div class="header-controls">
+      <a href="../index.html" class="btn-back-home" title="Voltar ao LiteHub OS" aria-label="Voltar para o LiteHub OS">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Voltar ao LiteHub</span>
+      </a>
+
+      <div class="slide-indicator">
+        <span id="current-slide-num">01</span>
+        <span class="sep">/</span>
+        <span id="total-slides-num">04</span>
+      </div>
+
+      <button id="btn-overview" class="icon-btn" title="Visão Geral (Esc)" aria-label="Visão geral dos slides">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="3" width="7" height="7" rx="1" />
+          <rect x="14" y="3" width="7" height="7" rx="1" />
+          <rect x="14" y="14" width="7" height="7" rx="1" />
+          <rect x="3" y="14" width="7" height="7" rx="1" />
+        </svg>
+      </button>
+
+      <button id="btn-fullscreen" class="icon-btn" title="Tela Cheia (F)" aria-label="Alternar tela cheia">
+        <svg class="fs-icon-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2">
+          <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Progress Bar Top -->
+  <div class="progress-bar-container">
+    <div id="progress-bar" class="progress-bar"></div>
+  </div>
+
+  <!-- Main Slides Viewport -->
+  <main class="slides-viewport">
+
+    <!-- SLIDE 1 -->
+    <section class="slide active" id="slide-1" data-slide="1">
+      <div class="slide-content hero-slide">
+        <div class="hero-badge">
+          <span class="dot"></span> ESTRUTURAÇÃO DE NEGÓCIOS
+        </div>
+
+        <h1 class="hero-title">LiteHub</h1>
+
+        <p class="hero-tagline">
+          <span class="highlight-pill">Marketing</span>
+          <span class="divider">•</span>
+          <span class="highlight-pill">Tecnologia</span>
+          <span class="divider">•</span>
+          <span class="highlight-pill">Vendas</span>
+          <span class="subtext">conectados.</span>
+        </p>
+
+        <div class="hero-card glass-panel">
+          <div class="quote-mark">“</div>
+          <p class="hero-description">
+            Ajudamos empresas a <strong>entender onde estão</strong>, identificar o <strong>próximo gargalo</strong> e
+            estruturar o <strong>próximo movimento</strong>.
+          </p>
+        </div>
+
+        <!-- 3 Pillars Visualizer -->
+        <div class="pillars-container">
+          <div class="pillar-item">
+            <div class="pillar-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+              </svg>
+            </div>
+            <span>Marketing</span>
+          </div>
+
+          <div class="pillar-connector">
+            <div class="connector-line"></div>
+            <div class="connector-pulse"></div>
+          </div>
+
+          <div class="pillar-item">
+            <div class="pillar-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <span>Tecnologia</span>
+          </div>
+
+          <div class="pillar-connector">
+            <div class="connector-line"></div>
+            <div class="connector-pulse"></div>
+          </div>
+
+          <div class="pillar-item">
+            <div class="pillar-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+            </div>
+            <span>Vendas</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 2 -->
+    <section class="slide" id="slide-2" data-slide="2">
+      <div class="slide-content salto-slide">
+        <div class="section-tag">METODOLOGIA DE DIAGNÓSTICO</div>
+        <h2 class="slide-title">O SALTO</h2>
+
+        <!-- Interactive SALTO letters card breakdown -->
+        <div class="salto-grid">
+          <div class="salto-card" data-salto="S">
+            <div class="salto-letter">S</div>
+            <div class="salto-info">
+              <span class="salto-word">Situação</span>
+              <p class="salto-desc">Mapeamento do cenário atual e diagnóstico de maturidade comercial e operacional.</p>
+            </div>
+          </div>
+
+          <div class="salto-card" data-salto="A">
+            <div class="salto-letter">A</div>
+            <div class="salto-info">
+              <span class="salto-word">Atração</span>
+              <p class="salto-desc">Estratégia de alcance, posicionamento de mercado e geração de demanda qualificada.
+              </p>
+            </div>
+          </div>
+
+          <div class="salto-card" data-salto="L">
+            <div class="salto-letter">L</div>
+            <div class="salto-info">
+              <span class="salto-word">Leads & Aquisição</span>
+              <p class="salto-desc">Captura, qualificação e otimização do fluxo de conversão em novos clientes.</p>
+            </div>
+          </div>
+
+          <div class="salto-card" data-salto="T">
+            <div class="salto-letter">T</div>
+            <div class="salto-info">
+              <span class="salto-word">Tecnologia</span>
+              <p class="salto-desc">Ferramentas, automações, arquitetura de dados e integração de sistemas.</p>
+            </div>
+          </div>
+
+          <div class="salto-card" data-salto="O">
+            <div class="salto-letter">O</div>
+            <div class="salto-info">
+              <span class="salto-word">Otimização</span>
+              <p class="salto-desc">Análise contínua de métricas, eliminação de gargalos e ganho de escala.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Key phrase footer card -->
+        <div class="salto-phrase-card glass-panel">
+          <div class="quote-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00FF87" stroke-width="2">
+              <path
+                d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 2v6c0 1.25.75 2 2 2h3c0 4-2 5.5-4 6z" />
+              <path
+                d="M15 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2h-4c-1.25 0-2 .75-2 2v6c0 1.25.75 2 2 2h3c0 4-2 5.5-4 6z" />
+            </svg>
+          </div>
+          <blockquote class="salto-quote">
+            “Antes de saltar, precisamos saber de onde estamos partindo.”
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 3 -->
+    <section class="slide" id="slide-3" data-slide="3">
+      <div class="slide-content conversa-slide">
+        <div class="section-tag">ALINHAMENTO E TRANSPARÊNCIA</div>
+        <h2 class="slide-title">Como funciona esta conversa</h2>
+
+        <div class="conversa-steps-container">
+          <!-- Timeline line track -->
+          <div class="steps-timeline-track">
+            <div class="steps-timeline-progress"></div>
+          </div>
+
+          <div class="conversa-step-card glass-panel" data-step="1">
+            <div class="step-badge">
+              <span class="step-num">01</span>
+              <span class="step-moment">Hoje</span>
+            </div>
+            <div class="step-content">
+              <h3>Entender o cenário.</h3>
+              <p>Mapeamos a realidade atual do seu negócio sem premissas ou soluções enlatadas.</p>
+            </div>
+          </div>
+
+          <div class="conversa-step-card glass-panel" data-step="2">
+            <div class="step-badge">
+              <span class="step-num">02</span>
+              <span class="step-moment">Depois</span>
+            </div>
+            <div class="step-content">
+              <h3>Analisar os dados.</h3>
+              <p>Examinamos gargalos de processo, tecnologia e performance de vendas com profundidade.</p>
+            </div>
+          </div>
+
+          <div class="conversa-step-card glass-panel highlight-step" data-step="3">
+            <div class="step-badge">
+              <span class="step-num">03</span>
+              <span class="step-moment">O Diagnóstico</span>
+            </div>
+            <div class="step-content">
+              <h3>Recomendação clara.</h3>
+              <p>Se encontrarmos uma oportunidade em que a LiteHub realmente possa ajudar, apresentamos uma recomendação
+                estruturada.</p>
+            </div>
+          </div>
+
+          <div class="conversa-step-card glass-panel honest-step" data-step="4">
+            <div class="step-badge">
+              <span class="step-num">04</span>
+              <span class="step-moment">Compromisso</span>
+            </div>
+            <div class="step-content">
+              <h3>Transparência total.</h3>
+              <p>Caso contrário, também falamos isso. Só avançamos se houver encaixe real e valor mensurável.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 4 -->
+    <section class="slide" id="slide-4" data-slide="4">
+      <div class="slide-content ponto-slide">
+        <div class="section-tag">FILOSOFIA DE ATUAÇÃO</div>
+        <h2 class="slide-title">Ponto A <span class="accent-arrow">→</span> Ponto B</h2>
+
+        <!-- Interactive Diagram -->
+        <div class="diagram-wrapper">
+          <div class="point-box point-a glass-panel">
+            <div class="point-header">
+              <span class="point-badge">ESTADO ATUAL</span>
+              <h3>Ponto A</h3>
+            </div>
+            <p>Diagnóstico preciso do cenário atual, gargalos e capacidade real da operação.</p>
+          </div>
+
+          <div class="bridge-box">
+            <div class="bridge-line">
+              <div class="bridge-pulse"></div>
+            </div>
+            <div class="bridge-pill">
+              <span class="bridge-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00FF87" stroke-width="2">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+              </span>
+              <span>O QUE PRECISA ACONTECER</span>
+            </div>
+          </div>
+
+          <div class="point-box point-b glass-panel">
+            <div class="point-header">
+              <span class="point-badge badge-b">OBJETIVO ALCANÇÁVEL</span>
+              <h3>Ponto B</h3>
+            </div>
+            <p>Evolução plausível, sustentável e mensurável com processos e tecnologia alinhados.</p>
+          </div>
+        </div>
+
+        <!-- Principles Cards -->
+        <div class="principles-grid">
+          <div class="principle-card glass-panel">
+            <div class="principle-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00FF87" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+              </svg>
+            </div>
+            <p>Não estamos procurando prometer um resultado antes de entender o problema.</p>
+          </div>
+
+          <div class="principle-card glass-panel highlight-principle">
+            <div class="principle-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00FF87" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+            </div>
+            <p>Estamos procurando identificar um <strong>Ponto A</strong>, um <strong>Ponto B plausível</strong> e o que
+              precisa acontecer entre os dois.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Controls Footer Bar -->
+  <footer class="app-footer">
+    <div class="nav-dots" id="nav-dots">
+      <button class="dot-btn active" data-target="1" aria-label="Ir para o slide 1 LiteHub"><span
+          class="dot-tooltip">LiteHub</span></button>
+      <button class="dot-btn" data-target="2" aria-label="Ir para o slide 2 O SALTO"><span class="dot-tooltip">O
+          SALTO</span></button>
+      <button class="dot-btn" data-target="3" aria-label="Ir para o slide 3 Como Funciona"><span
+          class="dot-tooltip">Como Funciona</span></button>
+      <button class="dot-btn" data-target="4" aria-label="Ir para o slide 4 Ponto A -> Ponto B"><span
+          class="dot-tooltip">Ponto A → B</span></button>
+    </div>
+
+    <div class="keyboard-hint">
+      <span>Use <kbd>←</kbd> <kbd>→</kbd> ou <kbd>Espaço</kbd> para navegar</span>
+    </div>
+
+    <div class="nav-actions">
+      <button id="btn-prev" class="nav-btn" aria-label="Slide anterior" disabled>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="15 18 9 12 15 6" />
+        </svg>
+        <span>Anterior</span>
+      </button>
+
+      <button id="btn-next" class="nav-btn primary-nav-btn" aria-label="Próximo slide">
+        <span>Próximo</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="9 18 15 12 9 6" />
+        </svg>
+      </button>
+    </div>
+  </footer>
+
+  <!-- Overview Grid Modal -->
+  <div id="overview-modal" class="overview-modal">
+    <div class="overview-header">
+      <h2>Visão Geral da Apresentação</h2>
+      <button id="btn-close-overview" class="icon-btn" aria-label="Fechar visão geral">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="overview-grid">
+      <div class="overview-card" data-jump="1">
+        <div class="card-thumb thumb-1">
+          <span class="thumb-badge">01</span>
+          <h4>LiteHub</h4>
+          <p>Marketing, tecnologia e vendas conectados.</p>
+        </div>
+      </div>
+      <div class="overview-card" data-jump="2">
+        <div class="card-thumb thumb-2">
+          <span class="thumb-badge">02</span>
+          <h4>O SALTO</h4>
+          <p>Situação, Atração, Leads, Tecnologia, Otimização</p>
+        </div>
+      </div>
+      <div class="overview-card" data-jump="3">
+        <div class="card-thumb thumb-3">
+          <span class="thumb-badge">03</span>
+          <h4>Como Funciona</h4>
+          <p>Hoje, depois, recomendação e transparência.</p>
+        </div>
+      </div>
+      <div class="overview-card" data-jump="4">
+        <div class="card-thumb thumb-4">
+          <span class="thumb-badge">04</span>
+          <h4>Ponto A → B</h4>
+          <p>Cenário atual, ponte e objetivo plausível.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+
+</html>
