@@ -54,9 +54,9 @@
     }
 
     .menu-documentacao .container {
-        display: flex;
-        gap: 8px;
-        overflow-x: auto;
+        display: grid;
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+        gap: 2px 4px;
         padding-top: 12px;
         padding-bottom: 12px;
     }
@@ -64,11 +64,12 @@
     .menu-documentacao a {
         text-decoration: none;
         color: var(--verde-escuro);
-        padding: 8px 12px;
+        padding: 6px 3px;
         border-radius: 8px;
         white-space: nowrap;
-        font-size: 0.9rem;
+        font-size: 0.78rem;
         font-weight: bold;
+        text-align: center;
     }
 
     .menu-documentacao a:hover {
